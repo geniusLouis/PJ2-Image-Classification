@@ -1,0 +1,38 @@
+[
+  {
+    "label": "sushi",
+    "sample_id": "sushi/100332",
+    "split": "train",
+    "keypoints": 797
+  },
+  {
+    "label": "tacos",
+    "sample_id": "tacos/1002217",
+    "split": "train",
+    "keypoints": 851
+  },
+  {
+    "label": "takoyaki",
+    "sample_id": "takoyaki/1002167",
+    "split": "train",
+    "keypoints": 1404
+  },
+  {
+    "label": "tiramisu",
+    "sample_id": "tiramisu/1002946",
+    "split": "train",
+    "keypoints": 565
+  },
+  {
+    "label": "tuna_tartare",
+    "sample_id": "tuna_tartare/1010528",
+    "split": "train",
+    "keypoints": 1030
+  },
+  {
+    "label": "waffles",
+    "sample_id": "waffles/100242",
+    "split": "train",
+    "keypoints": 1792
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "python": "3.12.16",
+  "numpy": "2.3.5",
+  "opencv": "4.13.0",
+  "matplotlib": "3.11.2",
+  "platform": "Linux-5.15.0-89-generic-x86_64-with-glibc2.35",
+  "processor": "x86_64",
+  "opencv_threads": 1,
+  "sift": {
+    "nfeatures": 0,
+    "nOctaveLayers": 3,
+    "contrastThreshold": 0.04,
+    "edgeThreshold": 10.0,
+    "sigma": 1.6
+  },
+  "color_space": "grayscale via cv2.COLOR_BGR2GRAY",
+  "resize": "none",
+  "descriptor": "OpenCV SIFT, 128-dimensional float32, unnormalized, all keypoints kept",
+  "bovw_cap": "128 descriptors per image applied in chapter 5, not here",
+  "randomness": "none",
+  "seed": 42,
+  "timing": "Single pass; decode+grayscale and SIFT timed separately; excludes cache writing and plots",
+  "failure_policy": "Raise with sample ID; zero-keypoint images keep zero rows",
+  "storage": "descriptors float32 with offsets; uncompressed NPZ",
+  "limit_per_split_label": null
+}
