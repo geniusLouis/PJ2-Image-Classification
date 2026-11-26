@@ -1,0 +1,181 @@
+truth,predicted,method,count
+chain saw,tench,local,84
+church,parachute,global,81
+chain saw,cassette player,global,78
+chain saw,tench,global,73
+garbage truck,gas pump,local,73
+tench,English springer,local,72
+gas pump,cassette player,local,70
+gas pump,garbage truck,global,70
+church,French horn,global,69
+tench,golf ball,local,67
+church,French horn,local,67
+English springer,tench,global,64
+gas pump,cassette player,global,61
+English springer,tench,local,53
+church,gas pump,local,53
+chain saw,English springer,global,51
+garbage truck,cassette player,global,51
+gas pump,garbage truck,local,50
+gas pump,French horn,global,49
+golf ball,tench,global,48
+English springer,golf ball,local,47
+chain saw,cassette player,local,46
+French horn,English springer,global,44
+golf ball,parachute,global,44
+chain saw,English springer,local,43
+chain saw,parachute,local,43
+garbage truck,parachute,global,43
+garbage truck,church,local,41
+English springer,garbage truck,global,39
+church,parachute,local,39
+gas pump,French horn,local,39
+English springer,parachute,local,38
+church,tench,local,38
+French horn,cassette player,global,38
+chain saw,golf ball,local,37
+tench,golf ball,global,36
+French horn,tench,global,36
+garbage truck,French horn,local,36
+golf ball,garbage truck,global,36
+cassette player,garbage truck,global,35
+gas pump,English springer,global,35
+church,garbage truck,local,34
+gas pump,tench,global,34
+English springer,French horn,global,33
+golf ball,cassette player,global,33
+cassette player,French horn,global,32
+French horn,church,global,32
+golf ball,French horn,global,32
+cassette player,English springer,global,31
+cassette player,gas pump,local,31
+chain saw,French horn,global,31
+French horn,garbage truck,local,31
+English springer,golf ball,global,30
+French horn,gas pump,local,30
+garbage truck,tench,global,30
+golf ball,English springer,global,30
+chain saw,French horn,local,29
+garbage truck,cassette player,local,29
+cassette player,French horn,local,27
+garbage truck,tench,local,26
+tench,church,local,25
+tench,French horn,global,25
+chain saw,church,local,25
+church,golf ball,global,25
+church,English springer,global,25
+church,garbage truck,global,25
+French horn,cassette player,local,25
+golf ball,tench,local,25
+English springer,cassette player,global,24
+chain saw,garbage truck,global,24
+French horn,tench,local,24
+garbage truck,English springer,global,24
+gas pump,parachute,global,24
+English springer,parachute,global,23
+gas pump,church,local,23
+golf ball,church,global,23
+golf ball,parachute,local,23
+tench,garbage truck,global,22
+tench,parachute,local,22
+English springer,French horn,local,22
+chain saw,garbage truck,local,22
+church,cassette player,global,22
+French horn,gas pump,global,22
+garbage truck,gas pump,global,22
+golf ball,cassette player,local,22
+golf ball,French horn,local,22
+parachute,English springer,local,22
+parachute,French horn,local,22
+cassette player,parachute,local,21
+cassette player,gas pump,global,21
+chain saw,gas pump,global,21
+chain saw,church,global,21
+gas pump,chain saw,global,21
+parachute,golf ball,global,21
+tench,English springer,global,20
+tench,French horn,local,20
+chain saw,golf ball,global,20
+church,cassette player,local,20
+French horn,English springer,local,20
+French horn,garbage truck,global,20
+garbage truck,parachute,local,20
+gas pump,church,global,20
+parachute,tench,global,20
+parachute,cassette player,local,20
+chain saw,gas pump,local,19
+church,English springer,local,19
+golf ball,English springer,local,19
+tench,cassette player,global,18
+church,chain saw,local,18
+garbage truck,English springer,local,18
+parachute,garbage truck,global,18
+parachute,church,local,18
+cassette player,parachute,global,17
+French horn,golf ball,global,17
+cassette player,tench,global,16
+French horn,church,local,16
+garbage truck,church,global,16
+gas pump,parachute,local,16
+parachute,cassette player,global,16
+English springer,church,local,15
+church,tench,global,15
+French horn,parachute,global,15
+garbage truck,golf ball,global,15
+gas pump,tench,local,15
+golf ball,chain saw,global,15
+parachute,English springer,global,15
+tench,garbage truck,local,14
+chain saw,parachute,global,14
+gas pump,golf ball,global,14
+golf ball,gas pump,global,14
+parachute,church,global,14
+tench,chain saw,local,13
+English springer,gas pump,global,13
+cassette player,church,global,13
+church,chain saw,global,13
+French horn,golf ball,local,13
+parachute,gas pump,global,13
+garbage truck,golf ball,local,12
+garbage truck,chain saw,global,12
+English springer,garbage truck,local,11
+English springer,chain saw,global,11
+cassette player,golf ball,local,11
+garbage truck,chain saw,local,11
+gas pump,golf ball,local,11
+parachute,tench,local,11
+parachute,garbage truck,local,11
+tench,parachute,global,10
+English springer,church,global,10
+cassette player,chain saw,global,10
+French horn,chain saw,global,10
+garbage truck,French horn,global,10
+gas pump,English springer,local,10
+gas pump,chain saw,local,10
+golf ball,gas pump,local,10
+parachute,French horn,global,10
+parachute,golf ball,local,10
+tench,church,global,9
+cassette player,garbage truck,local,9
+church,gas pump,global,9
+French horn,chain saw,local,9
+French horn,parachute,local,9
+English springer,cassette player,local,8
+English springer,chain saw,local,8
+English springer,gas pump,local,7
+cassette player,church,local,7
+cassette player,tench,local,7
+church,golf ball,local,7
+cassette player,English springer,local,6
+golf ball,chain saw,local,6
+tench,cassette player,local,5
+cassette player,golf ball,global,5
+parachute,chain saw,local,5
+tench,gas pump,global,4
+golf ball,church,local,4
+parachute,gas pump,local,4
+tench,gas pump,local,3
+tench,chain saw,global,3
+parachute,chain saw,global,3
+golf ball,garbage truck,local,2
+cassette player,chain saw,local,1
