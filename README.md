@@ -25,7 +25,7 @@ python code/prepare_splits.py
 
 成功后生成 `code/data/raw/food-101-coursework-6classes/` 和 `code/data/raw/imagenette2-320/`。原图压缩包及解包目录保存在各成员本地。数据准备脚本先校验压缩包，再解包到约定路径。第 1 章的已核对清单、类别映射和审计结果位于 `code/results/data_audit/`。后续模块各自提供复现命令。
 
-两条实验路线分别使用 **HSV 全图颜色直方图 → LinearSVC** 和 **SIFT 局部描述子 → K-means 视觉词袋（BoVW）→ LinearSVC**。两套数据分别训练，共形成四组主实验。分类器使用相同的训练集内分层验证策略、C 候选（0.1、1、10）和随机种子 42。BoVW 词典只用训练样本；验证中如调整 K 或分类器，必须在每个训练折学习词典和变换，再用于该折验证数据。最终测试集只用于最终评估。建议固定三折分层验证，按 Macro-F1 选参数。BoVW 可先固定 K=128，每张图最多保留 128 个 SIFT 描述子，并限制聚类样本量以控制运算成本。统一报告 Accuracy、Macro-F1、逐类指标和混淆矩阵，记录实际提取耗时及失败样本处理规则。
+两条实验路线分别使用 **HSV 全图颜色直方图 → LinearSVC** 和 **SIFT 局部描述子 → K-means 视觉词袋（BoVW）→ LinearSVC**。两套数据分别训练，共形成四组主实验。分类器使用相同的训练集内三折分层验证策略、C 候选（0.1、1、10）和随机种子 42，以平均验证 Macro-F1 选参数。BoVW 在每个训练折独立学习词典和 TF-IDF 权重；验证图只用于变换及评分。BoVW 以 K=128、L1 为基线，比较 K=64、128、256 和四种直方图表示。每图最多保留 128 个 SIFT 描述子，每次从训练图保留的描述子中抽取最多 100,000 个拟合词典。最终测试集用于所选配置的一次评估。统一报告 Accuracy、Macro-F1、逐类指标、混淆矩阵和分阶段耗时。
 
 ## 六人分工
 
@@ -100,3 +100,14 @@ print(scores["accuracy"], scores["macro_f1"])
 ```
 
 张帅宇可按第 1 章原清单提取 SIFT。杨晓芳可复用 `classify_color.py` 的 `training_folds(y_train)`、`C_VALUES`、`SVC_SETTINGS` 和共用评分函数，使训练验证与分类器设置一致。BoVW 词典须在每折训练样本的描述子上拟合，再编码该折验证图像。正式分类器和词典最终用全量训练集拟合，测试集用于所选配置的最终评估。
+
+## 第 5 章实验与交接
+
+从仓库根目录运行以下命令。已有第 4 章描述子缓存时使用第一条。只有解包后的原图和划分清单时，使用第二条按第 4 章设置提取并保存截取后的缓存。
+
+```bash
+python code/classify_bovw.py
+python code/classify_bovw.py --extract-missing --sift-workers 8
+```
+
+`code/results/bovw_classification/` 包含汇总指标、折内搜索、分阶段耗时、逐类指标、混淆矩阵和图 5-1 至图 5-4。第 6 章可读取 `summary.csv`、`config.json` 及两份 `{dataset}_predictions.csv`。预测按测试清单顺序保存，列名为 `sample_id,y_true,y_pred`，Food-101 六类和 Imagenette 分别有 1,500 行和 3,925 行。
