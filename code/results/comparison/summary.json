@@ -1,0 +1,40 @@
+{
+  "food101": {
+    "n": 1500,
+    "metrics": {
+      "global": {
+        "accuracy": 0.36866666666666664,
+        "macro_f1": 0.3655063472868351
+      },
+      "local": {
+        "accuracy": 0.43666666666666665,
+        "macro_f1": 0.4352276708188912
+      }
+    },
+    "outcomes": {
+      "both_correct": 245,
+      "global_only": 308,
+      "local_only": 410,
+      "both_wrong": 537
+    }
+  },
+  "imagenette": {
+    "n": 3925,
+    "metrics": {
+      "global": {
+        "accuracy": 0.39337579617834395,
+        "macro_f1": 0.37919096527429685
+      },
+      "local": {
+        "accuracy": 0.45070063694267515,
+        "macro_f1": 0.43286905064583336
+      }
+    },
+    "outcomes": {
+      "both_correct": 818,
+      "global_only": 726,
+      "local_only": 951,
+      "both_wrong": 1430
+    }
+  }
+}
